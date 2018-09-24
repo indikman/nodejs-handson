@@ -10,7 +10,7 @@ const orderRoutes = require('./api/routes/orders');
 
 mongoose.connect("mongodb+srv://nodejs-handson:"
     +process.env.MONGO_ATLAS_PW
-    +"@indikas-cluster-bpgpc.mongodb.net/test?retryWrites=true");
+    +"@indikas-cluster-bpgpc.mongodb.net/test?retryWrites=true", { useNewUrlParser: true });
  
 app.use(morgan('dev'));
 
